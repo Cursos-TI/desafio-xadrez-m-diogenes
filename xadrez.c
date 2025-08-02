@@ -2,37 +2,50 @@
 
 int main() {
     
-    int bispo = 0, rainha, movimento;
+    int bispo = 0, rainha = 0, cavalo = 1, movimento;
 
-    // Mover Torre 5 casas para a direita
-
+    //Torre
+    // Mover torre 5 casas para a direita
     for (int torre = 0; torre < 5; torre ++) { 
         printf("Direita\n");    //Imprime a direção do movimento
     }
-    
-    //Mover Bispo cinco casas na diagonal para cima e à direita
 
+    printf("\n");   //Linha em branco
+
+    //Bispo
+    //Mover bispo 5 casa na diagonal
     while (bispo < 5) {
 
         printf("Cima, Direita\n");    //Imprime a direção do movimento
-        
+
         bispo ++;
     }
 
-    // Mover Rainha oito casas para a esquerda
+    printf("\n");   //Linha em branco
 
+    //Rainha
+    //Mover rainha 8 casas para a esquerda
     do {
-    
-        printf("Digite o número de movimentos da (Rainha): ");
-        scanf("%d", &movimento);        //Entrada da quantidade de movimentos
 
-        for (int rainha = 0; rainha < movimento; rainha ++) {
-            printf("Esquerda\n");   //Imprime a direção do movimento
+        printf("Esquerda\n");
+        rainha++;   //Imprime a direção do movimento
+
         }
-    }
-    while (rainha == movimento);
-    printf("Acabou sua rodada!\n");    //Finaliza quando atinge a quantidade de movimentos
+    while (rainha < 8);
 
+    printf("\n");   //Linha em branco
+
+    //Cavalo
+    //Mover cavalo 3 casas: 2 para baixo e 1 para a esquerda
+    while (cavalo--)
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            printf("Baixo\n");      //Imprime a direção do movimento
+        }
+        printf("Esquerda\n");       //Imprime a direção do movimento
+    }
 
     return 0;
+
 }
