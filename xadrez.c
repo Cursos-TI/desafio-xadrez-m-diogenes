@@ -2,7 +2,7 @@
 
 int main() {
     
-    int bispo = 0, rainha = 0, cavalo = 1, movimento;
+    int bispo = 0, rainha = 0, cavalo = 1;
 
     //Torre
     // Mover torre 5 casas para a direita
@@ -47,5 +47,4 @@ int main() {
     }
 
     return 0;
-
 }
